@@ -23,4 +23,7 @@ export class ShoppingEditComponent implements OnInit {
     this.ingredientAdded.emit(newIngredient)
     console.log("on adde tiem",newIngredient);
   }
+  onDeleteItem(){
+    
+  }
 }
