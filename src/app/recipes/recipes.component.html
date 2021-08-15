@@ -5,7 +5,7 @@
   <div class="col-md-7">
     <app-recipe-detail
       *ngIf="showRecipeDetail; else showInfo"
-      [recipeToShow]="showRecipeDetail"
+      [recipe]="showRecipeDetail"
     >
     </app-recipe-detail>
     <ng-template #showInfo>
