@@ -5,15 +5,13 @@ import { recipeService } from '../../recipe.service';
 @Component({
   selector: 'app-recipe-item',
   templateUrl: './recipe-item.component.html',
-  styleUrls: ['./recipe-item.component.css']
+  styleUrls: ['./recipe-item.component.css'],
 })
 export class RecipeItemComponent implements OnInit {
-  recipe:Recipe
-  @Output() selectedRecipe: EventEmitter<Recipe>=new EventEmitter()
+  @Input() recipe: Recipe;
+  @Input() index: number;
 
-  constructor(private recipeService:recipeService) { }
+  constructor(private recipeService: recipeService) {}
 
-  ngOnInit(): void {
-  }
-  
+  ngOnInit(): void {}
 }
