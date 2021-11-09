@@ -1,0 +1,10 @@
+
+gitk:
+  - sudo apt install gitk
+curl:
+  - sudo apt install curl
+nvm:
+  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+  - source ~/.nvm/nvm.sh
+node:
+  - nvm install --lts
